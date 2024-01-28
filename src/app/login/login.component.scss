@@ -78,6 +78,11 @@ input {
   outline: none;
 }
 
+input[type="checkbox"] {
+  position: relative;
+  top: 2px;
+}
+
 input::placeholder {
   color: #ffffffca;
 }

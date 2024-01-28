@@ -2,12 +2,12 @@
   <div class="login-template">
 
     <div class="login-header">
-      <h2>Welcome to <span>RSSolutions</span></h2>
+      <h2>Welcome to <span>R.S.Solutions</span></h2>
       <span>Login to your account</span>
     </div>
 
     <div class="login-form">
-      <form action="#" method="post">
+      <form method="post" (submit)="onSubmit($event)">
         <div class="input-group">
           <div class="input-group-prepend">
             <i class="fas fa-user"></i>
@@ -23,7 +23,7 @@
 
         <div class="d-flex justify-content-between">
           <div>
-            <input class="pt-1" type="checkbox"> <span class="ps-1">Remember me</span>
+            <input type="checkbox"> <span class="ps-1">Remember me</span>
           </div>
           <span class="link"> Forgot Password</span>
         </div>
@@ -34,8 +34,8 @@
     </div>
 
     <div class="login-footer">
-      <span>Dont't have an account?</span>
-      <a class="link" href="#">Sign Up</a>
+      <span>Dont't have an account? &nbsp;</span>
+      <a class="link" (click)="goToRegistration()">Sign Up</a>
     </div>
 
   </div>
